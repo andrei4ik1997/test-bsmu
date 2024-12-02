@@ -9051,7 +9051,7 @@ const questions = [
       {
         id: 0,
         value: "стандартных сывороток",
-        isCorrect: false,
+        isCorrect: true,
       },
       {
         id: 1,
@@ -9065,7 +9065,7 @@ const questions = [
       },
     ],
     isMultiple: false,
-    rightAnswer: "",
+    rightAnswer: "стандартных сывороток",
   },
   {
     id: 332,
@@ -9108,11 +9108,11 @@ const questions = [
       {
         id: 2,
         value: "со временем появятся аллоиммунные антитела",
-        isCorrect: false,
+        isCorrect: true,
       },
     ],
     isMultiple: false,
-    rightAnswer: "",
+    rightAnswer: "со временем появятся аллоиммунные антитела",
   },
   {
     id: 334,
@@ -9525,13 +9525,13 @@ const questions = [
         id: 0,
         value:
           "при доступе к магистральным сосудам и проведении медицинских вмешательств на сосудах",
-        isCorrect: false,
+        isCorrect: true,
       },
       {
         id: 1,
         value:
           "при медицинских вмешательствах, в ходе выполнения которых возможен контакт со стерильными полостями и зонами организма пациента",
-        isCorrect: false,
+        isCorrect: true,
       },
       {
         id: 2,
@@ -9544,8 +9544,9 @@ const questions = [
         isCorrect: false,
       },
     ],
-    isMultiple: false,
-    rightAnswer: "",
+    isMultiple: true,
+    rightAnswer:
+      "при доступе к магистральным сосудам и проведении медицинских вмешательств на сосудах, при медицинских вмешательствах, в ходе выполнения которых возможен контакт со стерильными полостями и зонами организма пациента",
   },
   {
     id: 349,
@@ -13896,11 +13897,12 @@ const questions = [
         id: 3,
         value:
           "использовании сосудистого катетера для введения лекарственных средств",
-        isCorrect: false,
+        isCorrect: true,
       },
     ],
     isMultiple: false,
-    rightAnswer: "",
+    rightAnswer:
+      "использовании сосудистого катетера для введения лекарственных средств",
   },
   {
     id: 510,
