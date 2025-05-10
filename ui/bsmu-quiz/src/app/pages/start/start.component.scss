@@ -4,3 +4,11 @@
 	@include mixins.flex-column();
 	@include mixins.size(100%);
 }
+
+.title {
+	text-align: center;
+}
+
+.chose-test {
+	@include mixins.flex-column(1rem);
+}

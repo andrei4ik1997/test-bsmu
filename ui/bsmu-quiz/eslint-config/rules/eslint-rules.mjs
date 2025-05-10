@@ -88,7 +88,7 @@ export const eslintRules = {
 	'no-fallthrough': 'error',
 	'no-unmodified-loop-condition': 'error',
 	'no-negated-condition': 'error',
-	'no-nested-ternary': 'error',
+	'no-nested-ternary': 'off',
 	'no-new-wrappers': 'error',
 	'no-prototype-builtins': 'error',
 	'no-redeclare': 'error',

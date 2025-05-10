@@ -35,7 +35,7 @@ export const rxjsRules = {
 	'rxjs-x/no-connectable': 'error',
 	'rxjs-x/no-create': 'error',
 	'rxjs-x/no-cyclic-action': 'off',
-	'rxjs-x/no-explicit-generics': 'error',
+	'rxjs-x/no-explicit-generics': 'off',
 	'rxjs-x/no-exposed-subjects': 'error',
 	'rxjs-x/no-redundant-notify': 'error',
 	'rxjs-x/no-index': 'error',

@@ -6,6 +6,7 @@ export const miscellaneousRules = {
 	'sonarjs/elseif-without-else': 'error',
 	'sonarjs/no-inverted-boolean-check': 'error',
 	'sonarjs/no-nested-template-literals': 'off',
+	'sonarjs/no-nested-conditional': 'off',
 	'unicorn/escape-case': 'error',
 	'unicorn/filename-case': [
 		'error',

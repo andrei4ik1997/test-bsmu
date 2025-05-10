@@ -3,10 +3,18 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import type { EnvironmentProviders } from '@angular/core';
 import { inject, makeEnvironmentProviders } from '@angular/core';
 import type { IsActiveMatchOptions, ViewTransitionsFeatureOptions } from '@angular/router';
-import { provideRouter, Router, withComponentInputBinding, withViewTransitions } from '@angular/router';
-import { en_US, provideNzI18n } from 'ng-zorro-antd/i18n';
+import {
+	provideRouter,
+	Router,
+	RouteReuseStrategy,
+	withComponentInputBinding,
+	withViewTransitions,
+} from '@angular/router';
+import { CustomRouteReuseStrategy } from '@shared/services/custom-route-reuse-strategy';
+import { provideNzI18n, ru_RU } from 'ng-zorro-antd/i18n';
 
 import { routes } from './app.routes';
+import { StoreService } from './shared/services/store.service';
 
 export function provideAppRouter(): EnvironmentProviders {
 	const viewTransitionConfig: ViewTransitionsFeatureOptions = {
@@ -40,9 +48,13 @@ export function provideAppHttpClient(): EnvironmentProviders {
 }
 
 export function provideServices(): EnvironmentProviders {
-	return makeEnvironmentProviders([]);
+	return makeEnvironmentProviders([StoreService]);
 }
 
 export function provideNgZorro(): EnvironmentProviders {
-	return makeEnvironmentProviders([provideNzI18n(en_US)]);
+	return makeEnvironmentProviders([provideNzI18n(ru_RU)]);
+}
+
+export function provideRouteReuseStrategy(): EnvironmentProviders {
+	return makeEnvironmentProviders([{ provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy }]);
 }

@@ -16,8 +16,14 @@
 		"target": "ES2022",
 		"module": "ES2022",
 		"paths": {
-			"@shared/entities/*": ["./src/app/shared/entities/index.ts"],
-			"@shared/components/*": ["./src/app/shared/components/index.ts"]
+			"@pages/*": ["./src/app/pages/*"],
+			"@shared/components/*": ["./src/app/shared/components/*"],
+			"@shared/entities/*": ["./src/app/shared/entities/*"],
+			"@shared/db/*": ["./src/app/shared/db/*"],
+			"@shared/services/*": ["./src/app/shared/services/*"],
+			"@shared/pipes/*": ["./src/app/shared/pipes/*"],
+			"@shared/guards/*": ["./src/app/shared/guards/*"],
+			"@shared/modals/*": ["./src/app/shared/modals/*"]
 		}
 	},
 	"angularCompilerOptions": {
